@@ -1,0 +1,18 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: sunman_spelling_pseudo
+  name: 山人·伪方案·勿用勿改
+  version: "2021.08.10"
+  author:
+    - 发明人 谢振斌
+    - 方案制作 ywxt
+  description: |
+    伪方案，不能打字。
+    不要选我，不要修改本方案及配套词典。
+    仅用于辅助三重注解方案实现注解功能。
+
+translator:
+  dictionary: sunman_spelling_pseudo
+  enable_user_dict: false

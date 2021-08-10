@@ -1,0 +1,52 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+---
+name: sunman
+version: 2016.08.25
+use_preset_vocabulary: false
+sort: original
+columns:
+  - text
+  - code
+  - stem
+encoder:
+  exclude_patterns:
+    - "^[a-z]$" # 一简不参与造词
+    - "[^a-z]"
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaAbBaBbCaCb"
+    - length_equal: 4
+      formula: "AaBaCaDa"
+    - length_equal: 5
+      formula: "AaBaCaDaEa"
+    - length_equal: 6
+      formula: "AaBaCaDaEaFa"
+    - length_equal: 7
+      formula: "AaBaCaDaEaFaGa"
+    - length_equal: 8
+      formula: "AaBaCaDaEaFaGaHa"
+    - length_equal: 9
+      formula: "AaBaCaDaEaFaGaHaIa"
+    - length_equal: 10
+      formula: "AaBaCaDaEaFaGaHaIaJa"
+    - length_equal: 11
+      formula: "AaBaCaDaEaFaGaHaIaJaKa"
+    - length_equal: 12
+      formula: "AaBaCaDaEaFaGaHaIaJaKaLa"
+    - length_equal: 13
+      formula: "AaBaCaDaEaFaGaHaIaJaKaLaMa"
+    - length_equal: 14
+      formula: "AaBaCaDaEaFaGaHaIaJaKaLaMaNa"
+    - length_equal: 15
+      formula: "AaBaCaDaEaFaGaHaIaJaKaLaMaNaOa"
+import_tables:
+  - sunman.brevity
+  - sunman.words
+  - sunman.phrases1
+  - sunman.phrases2
+
+---
+

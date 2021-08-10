@@ -2,7 +2,7 @@
 ### This file must be encoded into UTF-8.
 ---
 name: sunman
-version: 2016.08.25
+version: 2021.08.10
 use_preset_vocabulary: false
 sort: original
 columns:
@@ -47,6 +47,7 @@ import_tables:
   - sunman.words
   - sunman.phrases1
   - sunman.phrases2
+  - sunman.extended
 
 ---
 

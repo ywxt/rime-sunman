@@ -169,7 +169,7 @@ translator:
   max_phrase_length: 5 # 自动成词的最大词长
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
-    # - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|糸阝女尸王扌石艹木土日虫山目口⺮魚禾月亻忄金宀火言氵|"
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|住日草月生手财一文金动走木女口丿心人水地食二天爪衣ㄣ|"
 # pua_extra:
 #   dictionary: sunman.pua_extra
 #   enable_sentence: true

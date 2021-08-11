@@ -4,10 +4,11 @@
 name: sunman
 version: 2021.08.10
 use_preset_vocabulary: false
-sort: original
+sort: weight
 columns:
   - text
   - code
+  - weight
   - stem
 encoder:
   exclude_patterns:

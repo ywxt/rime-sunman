@@ -2,920 +2,918 @@
 ### This file must be encoded into UTF-8.
 ---
 name: sunman.brevity
-version: 2016.08.25
+version: 2021.08.11
 use_preset_vocabulary: false
-sort: original
+sort: weight
 columns:
   - text
   - code
+  - weight
   - stem
-encoder:
-  exclude_patterns:
-    - '^x.*$'
-    - '^z.*$'
-...
 
-要	a
-是	b
-出	c
-的	d
-都	e
-在	f
-能	g
-一	h
-这	i
-成	j
-着	k
-了	l
-来	m
-大	n
-口	o
-我	p
-上	q
-人	r
-次	s
-地	t
-和	u
-二	v
-不	w
-对	x
-也	y
-已	z
-罗	ad
-空	af
-同	ah
-最	be
-量	bh
-影	bi
-照	bj
-昆	bu
-暖	bx
-带	ca
-草	cb
-真	ce
-博	ch
-获	ck
-花	cr
-落	cs
-芬	cv
-胆	db
-的	de
-为	df
-脑	di
-然	dk
-膝	dm
-脸	dr
-脚	dt
-脂	du
-教	en
-拍	fb
-报	fz
-能	gd
-理	gg
-球	gh
-略	gl
-参	gn
-界	gr
-琪	gu
-再	ha
-求	hs
-到	ht
-望	id
-亲	im
-说	is
-就	iw
-钢	ja
-锦	jb
-感	jh
-镜	ji
-钻	jq
-疆	jt
-销	jw
-骗	ka
-养	kd
-狗	kp
-踪	la
-得	lb
-跨	ln
-输	lr
-刺	ma
-模	mc
-校	mi
-格	ml
-检	mr
-妖	np
-嗯	oa
-喝	ob
-呢	oe
-嘀	oi
-咦	on
-哦	op
-吃	oq
-啊	ot
-吵	ow
-向	pa
-我	pf
-丢	pt
-愣	qa
-快	qf
-但	rb
-做	rc
-使	rh
-作	rq
-你	rt
-传	rv
-学	sa
-注	sd
-冲	so
-海	sq
-冷	sr
-法	st
-消	sw
-愿	tb
-块	tf
-后	th
-城	tj
-均	tp
-管	ua
-期	uc
-缺	uf
-笑	up
-以	ur
-等	ut
-曾	va
-前	vd
-遂	vk
-总	vo
-尊	vu
-普	vw
-慈	vy
-亏	vz
-烧	wj
-受	xa
-段	xh
-群	xp
-线	yh
-哀	yo
-给	yr
-结	yt
-继	yu
-纷	yv
-经	yx
-困	amk
-闲	amm
-因	ank
-您	rtq
-料	uui
-凹	vao
-凸	vtu
-刁	zhv
-网络	ay
-时候	br
-出来	cm
-为了	dl
-多少	dw
-手机	fm
-能够	gp
-可能	hg
-一个	hr
-这里	ig
-这种	iu
-大家	na
-如果	ng
-我们	pr
-社会	qr
-什么	rp
-没有	sf
-关系	vp
-关心	vq
-不是	wb
-不能	wg
-经济	ys
-那是	zb
-既然	zd
-那里	zg
-那样	zm
-那个	zr
-那种	zu
-窗口	aao
-害怕	acq
-空间	afa
-国家	aga
-国外	agd
-国际	agt
-同样	ahm
-宣传	ahr
-同学	ahs
-房子	ain
-所有	ajf
-所谓	aji
-所以	aju
-状态	akn
-图片	ala
-安装	ana
-因为	and
-安排	anf
-因此	anl
-问题	aob
-回来	aom
-回复	aoq
-回去	aot
-回答	aou
-密码	aqt
-内容	ara
-实在	asf
-实现	asg
-实施	asi
-实行	asl
-实用	asp
-实际	ast
-容易	atb
-版本	atm
-它们	aur
-完成	avj
-完美	avk
-刚刚	axa
-刚才	axf
-网站	axi
-网上	axq
-网络	axy
-农村	aym
-早上	bcq
-星期	bcu
-明白	bdb
-明天	bdh
-最新	bei
-最近	bej
-最好	ben
-最佳	ber
-最后	bet
-最终	bey
-时间	bfa
-时候	bfr
-时期	bfu
-影响	bio
-照片	bja
-是的	bld
-是在	blf
-是个	blr
-是否	blw
-日本	bom
-日子	bon
-日期	bou
-日常	bow
-昨天	bqh
-申请	bsi
-显示	bwq
-电影	bzb
-电脑	bzd
-电话	bzi
-电子	bzn
-电视	bzq
-英国	caa
-英语	cai
-真实	cea
-真的	ced
-直接	cef
-丰富	cfa
-责任	cgr
-十分	civ
-获得	ckl
-进口	clo
-进入	clr
-故事	coh
-警察	cpa
-生产	cpi
-生命	cpr
-生活	cps
-生气	cpw
-帮忙	ctq
-出来	cum
-出口	cuo
-出去	cut
-发生	cxc
-发展	cxe
-发现	cxg
-表现	cyg
-表示	cyq
-世界	czg
-朋友	ddf
-多了	ddl
-多数	ddu
-多少	ddw
-的是	deb
-的人	der
-为了	dfl
-为何	dfr
-主要	dga
-然而	dke
-然后	dkt
-名字	doa
-名称	dou
-外面	dqe
-永远	dsv
-面对	eax
-都是	ebb
-都有	ebf
-都会	ebr
-具有	ecf
-具体	ecr
-尽管	edu
-飞机	efm
-而是	ehb
-考试	ehi
-考虑	ehk
-自然	eid
-自身	eie
-自动	eiw
-自己	eiz
-老板	elm
-适合	elr
-适应	elt
-目的	emd
-目标	emm
-教育	enw
-职业	eow
-聊天	eph
-睡觉	eps
-见过	erf
-见到	erh
-身上	esq
-身体	esr
-聪明	evb
-联系	evp
-习惯	evq
-取消	exs
-眼睛	eze
-控制	fak
-提出	fbc
-提高	fbi
-提示	fbq
-提供	fbr
-措施	fci
-有时	fdb
-有的	fdd
-有效	fdi
-有些	fdl
-有点	fdq
-有关	fdv
-看看	fef
-看了	fel
-看来	fem
-工具	fge
-工作	fgr
-工程	fgu
-工业	fgw
-接触	fie
-接受	fix
-投入	fjr
-投资	fjs
-推荐	fkc
-过来	flm
-过去	flt
-过程	flu
-加强	foj
-加上	foq
-操作	for
-才是	fpb
-才能	fpg
-执行	fpl
-手机	fsm
-扩大	ftn
-在线	fty
-办法	fvs
-技术	fxm
-报告	fzk
-能力	gdf
-能够	gdp
-现实	gea
-现在	gef
-现象	gek
-现代	ger
-现场	get
-理解	gge
-理论	ggi
-理想	ggm
-遇到	glh
-参考	gne
-参加	gnf
-台湾	gos
-购买	gpz
-思想	gqm
-允许	gri
-邮件	gtr
-环境	gwt
-由于	gyh
-再次	has
-更是	hbb
-更多	hbd
-更加	hbf
-更新	hbi
-开发	hcc
-形象	hck
-开始	hcn
-开心	hcq
-于是	hfb
-哥哥	hhh
-无论	hhi
-无法	hhs
-无关	hhv
-一定	hia
-一直	hic
-一下	hih
-一张	hij
-一些	hil
-一样	him
-一句	hip
-一点	hiq
-一个	hir
-一次	his
-一种	hiu
-医生	hjc
-医院	hjt
-万元	hjv
-正是	hlb
-正在	hlf
-正式	hlj
-政治	hls
-政府	hlt
-政策	hlu
-正常	hlw
-事实	hoa
-可是	hob
-事情	hoq
-事件	hor
-事业	how
-下载	hqc
-下面	hqe
-下来	hqm
-下次	hqs
-下去	hqt
-一个	hrs
-至于	hth
-到了	htl
-至少	htw
-可以	hur
-三个	hvr
-东西	hwa
-严格	hwm
-严重	hwp
-欧洲	hxs
-计算	icu
-谢谢	iei
-方案	ifa
-方面	ife
-讨论	ifi
-方式	ifj
-方向	ifp
-方法	ifs
-证明	ihb
-语言	ihi
-立即	ihz
-设置	ija
-设计	iji
-评价	ijr
-删除	ijt
-这是	ilb
-这里	ilg
-这一	ilh
-这些	ill
-这样	ilm
-这么	ilp
-这个	ilr
-这次	ils
-这种	ilu
-这隻	ilv
-新的	imd
-这样	imk
-部门	ioa
-高兴	ios
-高级	ioy
-这么	ipg
-许多	iqd
-意见	iqe
-站在	iqf
-意思	iqg
-认真	irc
-认识	iri
-说明	isb
-说的	isd
-说话	isi
-产生	itc
-颜色	itr
-就要	iwa
-就是	iwb
-就会	iwr
-文字	ixa
-交易	ixb
-效果	ixg
-离开	ixh
-文章	ixi
-放心	ixq
-文件	ixr
-交流	ixs
-放弃	ixw
-交通	ixz
-市场	iyt
-记者	ize
-记录	izk
-记得	izl
-记忆	izq
-记住	izr
-针对	jcx
-欣赏	jew
-干嘛	jgo
-感到	jhh
-感觉	jhs
-感受	jhx
-费用	jjp
-或者	joe
-知识	joi
-知道	jov
-金融	jru
-引起	jsl
-监督	juq
-短信	jur
-平均	jvt
-销售	jwk
-成为	jzd
-成都	jze
-成功	jzf
-成熟	jzi
-银行	jzl
-成本	jzm
-成绩	jzy
-独立	kki
-集团	kma
-马上	kmq
-集体	kmr
-美国	kna
-美女	knn
-告诉	koi
-造成	koj
-先生	krc
-特点	ktq
-特色	ktr
-制造	kyk
-制作	kyr
-制度	kyt
-肯定	lda
-往往	ldl
-了解	lee
-之一	lih
-之后	lit
-之前	liv
-连接	llf
-频道	llv
-连续	lly
-条件	lmr
-足够	lop
-各个	lor
-各种	lou
-处理	lqg
-输入	lrr
-走了	ltl
-此时	lub
-行为	lvd
-行业	lvw
-很多	lzd
-起了	lzl
-起来	lzm
-很好	lzn
-查看	mbf
-想到	meh
-想法	mes
-相当	mew
-相对	mex
-材料	mfu
-本身	mhe
-本来	mhm
-样子	mkn
-格式	mlj
-速度	mot
-机会	mpr
-检查	mrm
-来自	mve
-来说	mvi
-来了	mvl
-未来	mwm
-根据	mzf
-根本	mzm
-太多	ndd
-姐姐	ndn
-规定	nea
-规范	nec
-规则	neg
-奇怪	nhq
-孩子	nkn
-达到	nlh
-母亲	nmi
-好的	nnd
-好了	nnl
-好像	nnr
-如果	nog
-如此	nol
-娱乐	nop
-如何	nor
-大家	nra
-大量	nrb
-大型	nrh
-媒体	nur
-女人	nvr
-她的	nyd
-她们	nyr
-另外	ofd
-别人	ofr
-号码	oht
-听说	oji
-品牌	ooa
-吃饭	oqu
-中国	osa
-中的	osd
-中文	osi
-只要	ova
-只有	ovf
-哪些	ozl
-哪个	ozr
-升级	pcy
-我国	pfa
-我是	pfb
-我的	pfd
-我就	pfi
-我想	pfm
-我也	pfy
-重新	pgi
-重大	pgn
-重点	pgq
-留下	pjh
-失去	pnt
-几天	pph
-几乎	ppp
-几个	ppr
-几次	pps
-用户	pva
-用于	pvh
-及时	pxb
-系列	pye
-忽悠	pyr
-系统	pyy
-包括	pzf
-慢慢	qbq
-性能	qcg
-情况	qcs
-视频	qel
-快速	qfm
-快乐	qfp
-恢复	qfq
-上网	qha
-上面	qhe
-上班	qhg
-上来	qhm
-上次	qhs
-上去	qht
-心情	qiq
-魅力	qmf
-每天	qnh
-每个	qnr
-每次	qns
-必须	qpy
-怎样	qqm
-怎么	qqp
-社会	qtr
-非常	qvw
-但是	rbl
-做了	rcl
-做好	rcn
-什么	rcp
-例子	ren
-负责	rgc
-全面	rge
-全部	rgi
-使用	rhp
-代表	rjc
-促进	rlc
-企业	rlw
-休息	rme
-人家	rna
-人生	rnc
-人才	rnf
-人民	rnn
-人员	rno
-人们	rnr
-人数	rnu
-人气	rnw
-仔细	rny
-合理	rog
-保证	roi
-合作	ror
-作为	rqd
-作者	rqe
-作品	rqo
-作用	rqp
-价格	rrm
-个人	rsr
-修改	rsz
-你的	rtd
-你们	rtr
-似乎	rup
-传统	rvy
-会有	rwf
-会员	rwo
-仅仅	rxr
-他的	ryd
-他们	ryr
-今日	rzb
-今天	rzh
-创造	rzk
-领导	rzz
-学生	sac
-漂亮	sai
-激情	sbq
-满足	scl
-清楚	scm
-注意	sdi
-咨询	sei
-资源	ses
-决定	sfa
-治疗	sge
-测试	sgi
-没有	sjf
-减少	sjw
-法律	stl
-消息	swe
-汽车	swl
-广告	tak
-广州	tas
-原因	tba
-愿意	tbi
-原来	tbm
-质量	tcb
-确定	tea
-声音	tei
-历史	tfo
-后来	thm
-培训	tii
-城市	tji
-降低	tlr
-腐败	trg
-除了	trl
-应该	tsi
-增加	tvf
-反正	txh
-反应	txt
-地区	tyh
-地址	tyt
-限制	tzk
-管理	uag
-简单	uav
-香港	ubs
-基本	ucm
-精神	ucq
-移动	udw
-利用	ujp
-利益	ujs
-两个	ulr
-数字	una
-类型	unh
-类似	unr
-积极	uom
-程序	uot
-稳定	ura
-以为	urd
-以下	urh
-以及	urp
-以上	urq
-符合	urr
-以后	urt
-以前	urv
-食品	uso
-等等	utu
-等级	uty
-比赛	uua
-科技	uuf
-比较	uul
-毕业	uuw
-北京	uvi
-配合	uzr
-曾经	vay
-并不	vcw
-前面	vde
-首先	vek
-首次	ves
-判断	vfu
-公布	vgf
-单位	vgr
-公司	vgz
-分钟	vjj
-分析	vjm
-分别	vjo
-关闭	vna
-关于	vnh
-关系	vnp
-关心	vnq
-关注	vns
-总是	vob
-普通	vwz
-父亲	vxi
-爸爸	vxv
-专家	vza
-专业	vzw
-需要	wea
-掌握	wff
-动物	wfk
-风格	wfm
-小时	wib
-小三	wih
-还要	wla
-还是	wlb
-否则	wog
-不要	wwa
-不是	wwb
-不过	wwf
-不能	wwg
-不可	wwh
-尝试	wwi
-不知	wwj
-不得	wwl
-不想	wwm
-不好	wwn
-不会	wwr
-不对	wwx
-当时	wxb
-当然	wxd
-当前	wxv
-支持	xcf
-欢迎	xep
-对于	xfh
-对象	xfk
-难道	xkv
-建议	xli
-建筑	xlu
-采取	xme
-采用	xmp
-群众	xpr
-组成	ydj
-组织	ydy
-也有	yef
-也许	yei
-也不	yew
-练习	yhe
-维护	ykf
-纔能	ykg
-终于	ylh
-麻烦	ymw
-帖子	yqn
-给我	yrp
-结束	ytm
-结婚	ytn
-结合	ytr
-继续	yuy
-统一	ywh
-统计	ywi
-经济	yxs
-经常	yxw
-那时	zfb
-那里	zfg
-导致	zfh
-那些	zfl
-那样	zfm
-那么	zfp
-那个	zfr
-那种	zfu
-既然	zhd
-退出	zlc
-通知	zpj
-买了	zsl
-收取	zxe
-收到	zxh
-改变	zxi
-改善	zxk
-收入	zxr
-改革	zxy
-已经	zyy
-即可	zzh
-即使	zzr
-实际上	atq
-要不要	awa
-是一个	bhr
-是什么	brp
-是不是	bwb
-为什么	drp
-自己的	ezd
-有可能	fhg
-有没有	fsf
-能不能	gwg
-一个人	hrr
-干什么	jrp
-越来越	lml
-好不好	nwn
-怎么办	qpf
-怎么样	qpm
-会不会	rwr
-没什么	srp
-不能够	wgp
-不可能	whg
-还可以	whu
-不知道	wjv
-还没有	wsf
-对不起	xwl
-对不对	xwx
+...
+要	a	125241221
+是	b	236108268
+出	c	205425669
+的	d	762866955
+都	e	58911523
+在	f	167535966
+能	g	126013827
+一	h	608170214
+这	i	143675902
+成	j	163507949
+着	k	87182910
+了	l	160416054
+来	m	160654780
+大	n	425830658
+口	o	100375517
+我	p	154387904
+上	q	282192889
+人	r	434270779
+次	s	73823175
+地	t	183297426
+和	u	82092971
+二	v	120283633
+不	w	741896220
+对	x	157207749
+也	y	67243123
+已	z	50323337
+罗	ad	47650784
+空	af	104381281
+同	ah	130418549
+最	be	83271792
+量	bh	124966268
+影	bi	55836644
+照	bj	36268261
+昆	bu	3421189
+暖	bx	13361940
+带	ca	52838540
+草	cb	40711086
+真	ce	61337237
+博	ch	23910601
+获	ck	22353093
+花	cr	100297265
+落	cs	50942540
+芬	cv	4872035
+胆	db	18047864
+的	de	762866955
+为	df	164009690
+脑	di	32002705
+然	dk	81723152
+膝	dm	3997292
+脸	dr	24026212
+脚	dt	38858593
+脂	du	8898700
+教	en	76429470
+拍	fb	18708007
+报	fz	78917531
+能	gd	126013827
+理	gg	235266094
+球	gh	82453830
+略	gl	26120025
+参	gn	34545094
+界	gr	62410421
+琪	gu	2196757
+再	ha	48084099
+求	hs	51401758
+到	ht	117414528
+望	id	35650179
+亲	im	38739917
+说	is	109110221
+就	iw	80047859
+钢	ja	19589841
+锦	jb	10370703
+感	jh	54738359
+镜	ji	19704272
+钻	jq	7195362
+疆	jt	4223363
+销	jw	34969002
+骗	ka	10058942
+养	kd	33584713
+狗	kp	21470589
+踪	la	5278697
+得	lb	148409486
+跨	ln	9012664
+输	lr	25279703
+刺	ma	14831304
+模	mc	60147530
+校	mi	38868235
+格	ml	81423568
+检	mr	27798320
+妖	np	6690598
+嗯	oa	962485
+喝	ob	15638310
+呢	oe	13068794
+嘀	oi	1018472
+咦	on	0
+哦	op	869691
+吃	oq	48224522
+啊	ot	7115351
+吵	ow	4950936
+向	pa	81026636
+我	pf	154387904
+丢	pt	6346652
+愣	qa	3557290
+快	qf	48541675
+但	rb	21569061
+做	rc	43364580
+使	rh	37088742
+作	rq	132922506
+你	rt	61736391
+传	rv	58844599
+学	sa	217135514
+注	sd	24909909
+冲	so	28221349
+海	sq	93198395
+冷	sr	31082248
+法	st	208621249
+消	sw	37054659
+愿	tb	18882194
+块	tf	18276007
+后	th	104573384
+城	tj	49017007
+均	tp	34074033
+管	ua	74917686
+期	uc	89239279
+缺	uf	18002217
+笑	up	43829306
+以	ur	163605175
+等	ut	84459744
+曾	va	16253623
+前	vd	89885966
+遂	vk	2591773
+总	vo	54694174
+尊	vu	11520871
+普	vw	31458686
+慈	vy	6873561
+亏	vz	11912947
+烧	wj	17759783
+受	xa	60410289
+段	xh	30717490
+群	xp	76439160
+线	yh	167363679
+哀	yo	10481301
+给	yr	31023842
+结	yt	69234451
+继	yu	13539400
+纷	yv	8838777
+经	yx	126091261
+困	amk	15921084
+闲	amm	15769054
+因	ank	57372201
+频	lle 
+您	rtq	10467459
+料	uui	39865080
+凹	vao	4368175
+凸	vtu	12602313
+刁	zhv	1950498
+网络	ay	225473
+时候	br	225678
+出来	cm	225568
+为了	dl	225615
+多少	dw	225325
+手机	fm	225408
+能够	gp	225538
+可能	hg	225667
+一个	hr	225685
+这里	ig	225550
+这种	iu	225651
+大家	na	225669
+如果	ng	225682
+我们	pr	225707
+社会	qr	225666
+什么	rp	225691
+没有	sf	225705
+关系	vp	225571
+关心	vq	224711
+不是	wb	225686
+不能	wg	225660
+经济	ys	225680
+那是	zb	223460
+既然	zd	224311
+那里	zg	224905
+那样	zm	224922
+那个	zr	225519
+那种	zu	224615
+窗口	aao	222702
+害怕	acq	224035
+空间	afa	225244
+国家	aga	225681
+国外	agd	224724
+国际	agt	225628
+同样	ahm	225171
+宣传	ahr	225148
+同学	ahs	224934
+房子	ain	224682
+所有	ajf	225560
+所谓	aji	224895
+所以	aju	225637
+状态	akn	225210
+图片	ala	224737
+安装	ana	224300
+因为	and	225687
+安排	anf	225141
+因此	anl	225587
+问题	aob	225693
+回来	aom	225278
+回复	aoq	225412
+回去	aot	224508
+回答	aou	224811
+密码	aqt	222478
+内容	ara	225423
+实在	asf	224589
+实现	asg	225541
+实施	asi	225405
+实行	asl	225133
+实用	asp	223195
+实际	ast	225308
+容易	atb	225321
+版本	atm	222896
+它们	aur	224965
+完成	avj	225536
+完美	avk	224551
+刚刚	axa	225181
+刚才	axf	224598
+网站	axi	225032
+网上	axq	225012
+网络	axy	225473
+农村	aym	225341
+早上	bcq	224751
+星期	bcu	223613
+明白	bdb	224996
+明天	bdh	225394
+最新	bei	224699
+最近	bej	225365
+最好	ben	225252
+最佳	ber	224643
+最后	bet	225592
+最终	bey	225306
+时间	bfa	225684
+时候	bfr	225678
+时期	bfu	224884
+影响	bio	225629
+照片	bja	225025
+是的	bld	223272
+是在	blf	223699
+是个	blr	224245
+是否	blw	225395
+日本	bom	225542
+日子	bon	224817
+日期	bou	222966
+日常	bow	222464
+昨天	bqh	225511
+申请	bsi	224857
+显示	bwq	225380
+电影	bzb	225363
+电脑	bzd	225168
+电话	bzi	225452
+电子	bzn	225030
+电视	bzq	225200
+英国	caa	225152
+英语	cai	224463
+真实	cea	224738
+真的	ced	212542
+直接	cef	225483
+丰富	cfa	224914
+责任	cgr	225302
+十分	civ	225316
+获得	ckl	225570
+进口	clo	224559
+进入	clr	225563
+故事	coh	225097
+警察	cpa	224479
+生产	cpi	225633
+生命	cpr	225232
+生活	cps	225659
+生气	cpw	223369
+帮忙	ctq	223580
+出来	cum	225568
+出口	cuo	225113
+出去	cut	224942
+发生	cxc	225614
+发展	cxe	225700
+发现	cxg	225655
+表现	cyg	225498
+表示	cyq	225665
+世界	czg	225654
+朋友	ddf	225522
+多了	ddl	137562
+多数	ddu	223668
+多少	ddw	225325
+的是	deb	225194
+的人	der	225307
+为了	dfl	225615
+为何	dfr	223865
+主要	dga	225642
+然而	dke	225071
+然后	dkt	225514
+名字	doa	224829
+名称	dou	223218
+外面	dqe	224357
+永远	dsv	225236
+面对	eax	225186
+都是	ebb	225662
+都有	ebf	223997
+都会	ebr	225132
+具有	ecf	225527
+具体	ecr	225280
+尽管	edu	225178
+飞机	efm	224782
+而是	ehb	225320
+考试	ehi	225058
+考虑	ehk	225336
+自然	eid	225373
+自身	eie	224764
+自动	eiw	224403
+自己	eiz	225706
+老板	elm	224801
+适合	elr	224885
+适应	elt	224608
+目的	emd	225108
+目标	emm	225419
+教育	enw	225601
+职业	eow	224971
+聊天	eph	223680
+睡觉	eps	225047
+见过	erf	222414
+见到	erh	223794
+身上	esq	224313
+身体	esr	225274
+聪明	evb	223595
+联系	evp	225277
+习惯	evq	224973
+取消	exs	224225
+眼睛	eze	225089
+控制	fak	225426
+提出	fbc	225512
+提高	fbi	225612
+提示	fbq	223857
+提供	fbr	225591
+措施	fci	225297
+有时	fdb	224434
+有的	fdd	225301
+有效	fdi	225322
+有些	fdl	225518
+有点	fdq	225293
+有关	fdv	225604
+看看	fef	225376
+看了	fel	223906
+看来	fem	225059
+工具	fge	224249
+工作	fgr	225698
+工程	fgu	225476
+工业	fgw	225217
+接触	fie	224375
+接受	fix	225469
+投入	fjr	225115
+投资	fjs	225625
+推荐	fkc	225337
+过来	flm	225017
+过去	flt	225494
+过程	flu	225534
+加强	foj	225478
+加上	foq	224814
+操作	for	225013
+才是	fpb	224912
+才能	fpg	225384
+执行	fpl	225205
+手机	fsm	225408
+扩大	ftn	225076
+在线	fty	223991
+办法	fvs	225350
+技术	fxm	225647
+报告	fzk	225410
+能力	gdf	225566
+能够	gdp	225538
+现实	gea	224992
+现在	gef	225690
+现象	gek	225173
+现代	ger	225112
+现场	get	225388
+理解	gge	225026
+理论	ggi	225198
+理想	ggm	224552
+遇到	glh	224952
+参考	gne	223812
+参加	gnf	225580
+台湾	gos	225227
+购买	gpz	225163
+思想	gqm	225417
+允许	gri	224349
+邮件	gtr	221296
+环境	gwt	225532
+由于	gyh	225638
+再次	has	225199
+更是	hbb	224911
+更多	hbd	225454
+更加	hbf	225275
+更新	hbi	224319
+开发	hcc	225528
+形象	hck	224842
+开始	hcn	225679
+开心	hcq	225270
+于是	hfb	225211
+哥哥	hhh	224098
+无论	hhi	225086
+无法	hhs	225425
+无关	hhv	221977
+一定	hia	225640
+一直	hic	225620
+一下	hih	225557
+一张	hij	224072
+一些	hil	225673
+一样	him	225562
+一句	hip	223345
+一点	hiq	224980
+一个	hir	225685
+一次	his	225079
+一种	hiu	225037
+医生	hjc	224825
+医院	hjt	225382
+万元	hjv	202419
+正是	hlb	224976
+正在	hlf	225551
+正式	hlj	225282
+政治	hls	225315
+政府	hlt	225653
+政策	hlu	225533
+正常	hlw	225312
+事实	hoa	224741
+可是	hob	225447
+事情	hoq	225524
+事件	hor	225219
+事业	how	225124
+下载	hqc	225664
+下面	hqe	224384
+下来	hqm	225140
+下次	hqs	223483
+下去	hqt	224954
+一个	hrs	225685
+至于	hth	224366
+到了	htl	225526
+至少	htw	224953
+可以	hur	225703
+三个	hvr	223651
+东西	hwa	225552
+严格	hwm	224847
+严重	hwp	225389
+欧洲	hxs	224924
+计算	icu	224756
+谢谢	iei	225153
+方案	ifa	225230
+方面	ife	225636
+讨论	ifi	225063
+方式	ifj	225549
+方向	ifp	225093
+方法	ifs	225517
+证明	ihb	225041
+语言	ihi	224674
+立即	ihz	225035
+设置	ija	224390
+设计	iji	225530
+评价	ijr	224810
+删除	ijt	219611
+这是	ilb	225125
+这里	ilg	225550
+这一	ilh	213157
+这些	ill	225671
+这样	ilm	225689
+这么	ilp	225611
+这个	ilr	225702
+这次	ils	225427
+这种	ilu	225651
+这隻	ilv	0
+新的	imd	206234
+这样	imk	225689
+部门	ioa	225616
+高兴	ios	224701
+高级	ioy	224524
+这么	ipg	225611
+许多	iqd	225429
+意见	iqe	225197
+站在	iqf	223589
+意思	iqg	224597
+认真	irc	225084
+认识	iri	225343
+说明	isb	225176
+说的	isd	137617
+说话	isi	224849
+产生	itc	225396
+颜色	itr	224327
+就要	iwa	225046
+就是	iwb	225699
+就会	iwr	224268
+文字	ixa	223888
+交易	ixb	225313
+效果	ixg	225303
+离开	ixh	225182
+文章	ixi	224648
+放心	ixq	223894
+文件	ixr	224717
+交流	ixs	224983
+放弃	ixw	224889
+交通	ixz	225202
+市场	iyt	225688
+记者	ize	225696
+记录	izk	224503
+记得	izl	225028
+记忆	izq	224200
+记住	izr	223183
+针对	jcx	224916
+欣赏	jew	223993
+干嘛	jgo	223165
+感到	jhh	225102
+感觉	jhs	225544
+感受	jhx	224779
+费用	jjp	224957
+或者	joe	225455
+知识	joi	225183
+知道	jov	225643
+金融	jru	225222
+引起	jsl	225272
+监督	juq	225111
+短信	jur	223692
+平均	jvt	225184
+销售	jwk	225411
+成为	jzd	225650
+成都	jze	224445
+成功	jzf	225506
+成熟	jzi	224703
+银行	jzl	225432
+成本	jzm	225191
+成绩	jzy	225145
+独立	kki	224898
+集团	kma	225234
+马上	kmq	224864
+集体	kmr	224638
+美国	kna	225670
+美女	knn	224385
+告诉	koi	225496
+造成	koj	225421
+先生	krc	225066
+特点	ktq	225036
+特色	ktr	224753
+制造	kyk	224759
+制作	kyr	224580
+制度	kyt	225463
+肯定	lda	225279
+往往	ldl	224869
+了解	lee	225561
+之一	lih	225290
+之后	lit	225582
+之前	liv	225314
+连接	llf	223410
+频道	llv	223661
+连续	lly	225101
+条件	lmr	225449
+足够	lop	224178
+各个	lor	224467
+各种	lou	225508
+处理	lqg	225433
+输入	lrr	222560
+走了	ltl	223648
+此时	lub	224637
+行为	lvd	225420
+行业	lvw	225462
+很多	lzd	225597
+起了	lzl	180970
+起来	lzm	225622
+很好	lzn	225185
+查看	mbf	222905
+想到	meh	225242
+想法	mes	224320
+相当	mew	225088
+相对	mex	225022
+材料	mfu	225057
+本身	mhe	224675
+本来	mhm	224789
+样子	mkn	224666
+格式	mlj	221669
+速度	mot	225231
+机会	mpr	225471
+检查	mrm	225344
+来自	mve	225401
+来说	mvi	225391
+来了	mvl	223949
+未来	mwm	225366
+根据	mzf	225558
+根本	mzm	225237
+太多	ndd	223859
+姐姐	ndn	224494
+规定	nea	225553
+规范	nec	224910
+规则	neg	224344
+奇怪	nhq	223892
+孩子	nkn	225575
+达到	nlh	225537
+母亲	nmi	224819
+好的	nnd	137733
+好了	nnl	224108
+好像	nnr	225005
+如果	nog	225682
+如此	nol	225406
+娱乐	nop	224676
+如何	nor	225484
+大家	nra	225669
+大量	nrb	225223
+大型	nrh	224752
+媒体	nur	225400
+女人	nvr	225448
+她的	nyd	224771
+她们	nyr	224921
+另外	ofd	225328
+别人	ofr	225461
+号码	oht	223489
+听说	oji	224335
+品牌	ooa	225390
+吃饭	oqu	224777
+中国	osa	225704
+中的	osd	213517
+中文	osi	223320
+只要	ova	225418
+只有	ovf	225599
+哪些	ozl	223289
+哪个	ozr	224151
+升级	pcy	224595
+我国	pfa	225569
+我是	pfb	205961
+我的	pfd	225413
+我就	pfi	204939
+我想	pfm	224316
+我也	pfy	206684
+重新	pgi	225020
+重大	pgn	225138
+重点	pgq	225364
+留下	pjh	224633
+失去	pnt	224859
+几天	pph	222446
+几乎	ppp	225164
+几个	ppr	225387
+几次	pps	222149
+用户	pva	225251
+用于	pvh	224670
+及时	pxb	225027
+系列	pye	224803
+忽悠	pyr	216900
+系统	pyy	225559
+包括	pzf	225577
+慢慢	qbq	224560
+性能	qcg	224469
+情况	qcs	225663
+视频	qel	224839
+快速	qfm	224853
+快乐	qfp	225335
+恢复	qfq	225023
+上网	qha	223946
+上面	qhe	224518
+上班	qhg	224645
+上来	qhm	224143
+上次	qhs	222876
+上去	qht	223818
+心情	qiq	225172
+魅力	qmf	223623
+每天	qnh	225409
+每个	qnr	225008
+每次	qns	224888
+必须	qpy	225594
+怎样	qqm	224928
+怎么	qqp	225635
+社会	qtr	225666
+非常	qvw	225621
+但是	rbl	225668
+做了	rcl	187687
+做好	rcn	223779
+什么	rcp	225691
+例子	ren	221667
+负责	rgc	225135
+全面	rge	225333
+全部	rgi	225399
+使用	rhp	225584
+代表	rjc	225504
+促进	rlc	225258
+企业	rlw	225692
+休息	rme	224654
+人家	rna	224881
+人生	rnc	225265
+人才	rnf	225158
+人民	rnn	225572
+人员	rno	225596
+人们	rnr	225439
+人数	rnu	224493
+人气	rnw	224104
+仔细	rny	223743
+合理	rog	224962
+保证	roi	225304
+合作	ror	225509
+作为	rqd	225613
+作者	rqe	224906
+作品	rqo	225078
+作用	rqp	225548
+价格	rrm	225627
+个人	rsr	225515
+修改	rsz	223969
+你的	rtd	225216
+你们	rtr	225631
+似乎	rup	225099
+传统	rvy	225305
+会有	rwf	223786
+会员	rwo	223523
+仅仅	rxr	224205
+他的	ryd	225167
+他们	ryr	225701
+今日	rzb	225103
+今天	rzh	225676
+创造	rzk	225021
+领导	rzz	225543
+学生	sac	225586
+漂亮	sai	224769
+激情	sbq	223374
+满足	scl	225044
+清楚	scm	225001
+注意	sdi	225367
+咨询	sei	224546
+资源	ses	225392
+决定	sfa	225523
+治疗	sge	225475
+测试	sgi	224659
+没有	sjf	225705
+减少	sjw	225261
+法律	stl	225360
+消息	swe	225465
+汽车	swl	225404
+广告	tak	225109
+广州	tas	225174
+原因	tba	225486
+愿意	tbi	225054
+原来	tbm	225403
+质量	tcb	225431
+确定	tea	225165
+声音	tei	225061
+历史	tfo	225438
+后来	thm	225110
+培训	tii	224975
+城市	tji	225598
+降低	tlr	225073
+腐败	trg	223192
+除了	trl	225353
+应该	tsi	225618
+增加	tvf	225567
+反正	txh	223848
+反应	txt	225045
+地区	tyh	225457
+地址	tyt	225310
+限制	tzk	224669
+管理	uag	225674
+简单	uav	225255
+香港	ubs	225332
+基本	ucm	225488
+精神	ucq	225441
+移动	udw	224476
+利用	ujp	225424
+利益	ujs	225249
+两个	ulr	225085
+数字	una	224768
+类型	unh	224026
+类似	unr	224212
+积极	uom	225398
+程序	uot	224653
+稳定	ura	225196
+以为	urd	225192
+以下	urh	225177
+以及	urp	225605
+以上	urq	225535
+符合	urr	224941
+以后	urt	225503
+以前	urv	225285
+食品	uso	225014
+等等	utu	224612
+等级	uty	223633
+比赛	uua	225626
+科技	uuf	225334
+比较	uul	225573
+毕业	uuw	224529
+北京	uvi	225632
+配合	uzr	224712
+曾经	vay	225221
+并不	vcw	225309
+前面	vde	224260
+首先	vek	225195
+首次	ves	224873
+判断	vfu	224266
+公布	vgf	225127
+单位	vgr	225500
+公司	vgz	225695
+分钟	vjj	225381
+分析	vjm	225485
+分别	vjo	225372
+关闭	vna	222668
+关于	vnh	225377
+关系	vnp	225571
+关心	vnq	224711
+关注	vns	225545
+总是	vob	225212
+普通	vwz	224985
+父亲	vxi	224871
+爸爸	vxv	224686
+专家	vza	225378
+专业	vzw	225369
+需要	wea	225661
+掌握	wff	224661
+动物	wfk	224599
+风格	wfm	224646
+小时	wib	225472
+小三	wih	179753
+还要	wla	225245
+还是	wlb	225683
+否则	wog	224432
+不要	wwa	225610
+不是	wwb	225686
+不过	wwf	225607
+不能	wwg	225660
+不可	wwh	224998
+尝试	wwi	223579
+不知	wwj	224841
+不得	wwl	224709
+不想	wwm	225267
+不好	wwn	223808
+不会	wwr	225619
+不对	wwx	223358
+当时	wxb	225435
+当然	wxd	225331
+当前	wxv	224820
+支持	xcf	225585
+欢迎	xep	224986
+对于	xfh	225602
+对象	xfk	224729
+难道	xkv	224625
+建议	xli	225291
+建筑	xlu	225114
+采取	xme	225283
+采用	xmp	225430
+群众	xpr	225456
+组成	ydj	224918
+组织	ydy	225600
+也有	yef	223871
+也许	yei	225095
+也不	yew	224135
+练习	yhe	222458
+维护	ykf	224663
+纔能	ykg	0
+终于	ylh	225444
+麻烦	ymw	224045
+帖子	yqn	218990
+给我	yrp	224053
+结束	ytm	225358
+结婚	ytn	224800
+结合	ytr	225273
+继续	yuy	225579
+统一	ywh	225161
+统计	ywi	225150
+经济	yxs	225680
+经常	yxw	225151
+那时	zfb	223636
+那里	zfg	224905
+导致	zfh	225276
+那些	zfl	225460
+那样	zfm	224922
+那么	zfp	225624
+那个	zfr	225519
+那种	zfu	224615
+既然	zhd	224311
+退出	zlc	223305
+通知	zpj	224826
+买了	zsl	221848
+收取	zxe	222776
+收到	zxh	224678
+改变	zxi	225351
+改善	zxk	224913
+收入	zxr	225319
+改革	zxy	225490
+已经	zyy	225694
+即可	zzh	224190
+即使	zzr	225034
+实际上	atq	224778
+要不要	awa	175550
+是一个	bhr	203547
+是什么	brp	197480
+是不是	bwb	225218
+为什么	drp	225445
+自己的	ezd	225346
+有可能	fhg	179542
+有没有	fsf	185933
+能不能	gwg	223566
+一个人	hrr	225453
+干什么	jrp	222439
+越来越	lml	225342
+好不好	nwn	166079
+怎么办	qpf	224184
+怎么样	qpm	224041
+会不会	rwr	223791
+没什么	srp	223736
+不能够	wgp	148528
+不可能	whg	224792
+还可以	whu	178295
+不知道	wjv	225482
+还没有	wsf	183505
+对不起	xwl	223728
+对不对	xwx	152872

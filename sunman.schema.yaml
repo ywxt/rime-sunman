@@ -75,7 +75,7 @@ engine:
   translators:
     - punct_translator
     - history_translator@history
-    # - table_translator@fixed
+    - table_translator@fixed
     - table_translator
     - script_translator@luna_pinyin
     - script_translator@luna_pinyin_lookup
@@ -154,11 +154,11 @@ speller:
   algebra:
     - xform/^\*// # 特码以星号开头，以便在全码后置脚本中区分，以防识别为全码
 
-# fixed:
-#   __include: translator
-#   enable_user_dict: false
-#   enable_sentence: false
-#   initial_quality: 1000
+fixed:
+  __include: translator
+  enable_user_dict: false
+  enable_sentence: false
+  initial_quality: 100000000
 
 translator:
   dictionary: sunman
@@ -171,13 +171,7 @@ translator:
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
     - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|住日草月体手财一言金虫行木女口丿心人水地食八火叉衣ㄣ|"
-# pua_extra:
-#   dictionary: sunman.pua_extra
-#   enable_sentence: true
-#   enable_user_dict: true
-#   enable_encoder: true
-#   encode_commit_history: false # 对连续上屏的词自动成词
-#   max_phrase_length: 5 # 自动成词的最大词长
+
 # history:
 #   input:
 #   size: 1

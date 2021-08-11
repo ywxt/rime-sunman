@@ -48,8 +48,8 @@ switches:
       - sunman_spelling.lv3
     states: [〇注解, 一重注解, 二重注解, 三重注解]
     reset: 3
-  # - options: [ pua_basic, pua_extra]
-  #   states: [PUA基本, PUA全集]
+  - name: pua_filter
+    states: [PUA基本, PUA全集]
 
 engine:
   processors:
@@ -75,7 +75,7 @@ engine:
   translators:
     - punct_translator
     - history_translator@history
-    - table_translator@fixed
+    # - table_translator@fixed
     - table_translator
     - script_translator@luna_pinyin
     - script_translator@luna_pinyin_lookup
@@ -96,6 +96,7 @@ engine:
     - lua_filter@sunman_spelling@smsp_for_rvlk
     # - lua_filter@sunman_postpone_fullcode
     # - lua_filter@lazy_clock
+    - lua_filter@summan_pua_filter
     - uniquifier
     # - lua_filter@debug_filter
 
@@ -153,11 +154,11 @@ speller:
   algebra:
     - xform/^\*// # 特码以星号开头，以便在全码后置脚本中区分，以防识别为全码
 
-fixed:
-  __include: translator
-  enable_user_dict: false
-  enable_sentence: false
-  initial_quality: 1000
+# fixed:
+#   __include: translator
+#   enable_user_dict: false
+#   enable_sentence: false
+#   initial_quality: 1000
 
 translator:
   dictionary: sunman
@@ -169,7 +170,7 @@ translator:
   max_phrase_length: 5 # 自动成词的最大词长
   preedit_format:
     - 'xform/^([a-z]*)$/$1\t（\U$1\E）/'
-    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|住日草月生手财一文金动走木女口丿心人水地食二天爪衣ㄣ|"
+    - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|住日草月体手财一言金虫行木女口丿心人水地食八火叉衣ㄣ|"
 # pua_extra:
 #   dictionary: sunman.pua_extra
 #   enable_sentence: true

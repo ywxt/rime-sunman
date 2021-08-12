@@ -4,7 +4,7 @@
 name: sunman.words
 version: 2021.08.11
 use_preset_vocabulary: false
-sort: weight
+sort: by_weight
 columns:
   - text
   - code
@@ -12,7 +12,6 @@ columns:
   - stem
 ...
 
-要	a	125241221
 宀	a	0
 冖	a	0
 冂	a	0
@@ -709,7 +708,7 @@ columns:
 窦	aczsn	2238706
 窦	aczsnr	2238706
 牍	aczsnr	1030375
-罗	ad	47650784
+# 罗	ad	47650784
 將	ad	41268
 鬥	ad	39706
 ⾾	ad	0
@@ -2680,7 +2679,6 @@ columns:
 𡨭	amvgs	0
 𫭆	amwk	0
 𥥘	amwv	0
-要	an	125241221
 𪧚	anafc	0
 𫳘	anahd	0
 𡚤	anananr	0
@@ -5285,7 +5283,6 @@ columns:
 𨶘	azzhcg	0
 𨴘	azztum	0
 𡆵	azzzk	0
-是	b	236108268
 白	ba	89703442
 ⽩	ba	0
 𣉦	baahio	0
@@ -8057,7 +8054,6 @@ columns:
 𥟙	bzyuho	0
 𪐘	bzyw	0
 𣌸	bzzio	0
-出	c	205425669
 卝	c	20518
 丌	c	0
 艹	c	0
@@ -14623,7 +14619,6 @@ columns:
 𦭍	czztu	0
 𦮊	czztu	0
 𦭺	czzzs	0
-的	d	762866955
 乀	d	21114
 丶	d	73244
 	d	0
@@ -17173,7 +17168,6 @@ columns:
 𦚲	dzztuv	0
 𦘮	dzzv	0
 𦘳	dzzv	0
-都	e	58911523
 面	ea	210817198
 靣	ea	38974
 ⾯	ea	0
@@ -25050,7 +25044,6 @@ columns:
 𣩃	ezzid	0
 𥄀	ezzm	0
 𩑍	ezzy	0
-在	f	167535966
 	f	0
 	f	0
 	f	0
@@ -29332,7 +29325,6 @@ columns:
 揤	fzzis	18434
 𪭣	fzzsds	0
 𢬟	fzztus	0
-能	g	126013827
 田	ga	26112109
 ⽥	ga	0
 𪼮	gaahoyi	0
@@ -32695,7 +32687,6 @@ columns:
 𤣱	gzyw	0
 㐕	gzyy	13016
 𤩄	gzzccv	0
-一	h	608170214
 再	ha	48084099
 𫧚	haconf	0
 𠀙	hahai	0
@@ -34840,7 +34831,6 @@ columns:
 𠑸	hzzrei	0
 乬	hzzy	21096
 乬	hzzyk	21096
-这	i	143675902
 亠	i	0
 ⼇	i	0
 〦	i	0
@@ -39817,7 +39807,6 @@ columns:
 𬤥	izzccv	0
 譔	izzcv	39442
 𣁚	izzix	0
-成	j	163507949
 	j	0
 	j	0
 	j	0
@@ -45070,7 +45059,6 @@ columns:
 鐉	jzzc	24878
 𨯭	jzzccl	0
 鐉	jzzccv	24878
-着	k	87182910
 骗	ka	10058942
 騙	ka	40210
 蜵	kaa	14802
@@ -53835,7 +53823,6 @@ columns:
 鲫	kzziv	359033
 鯽	kzziv	30104
 𤘗	kzzu	0
-了	l	160416054
 辶	l	0
 㐄	l	13050
 疋	l	0
@@ -58890,7 +58877,6 @@ columns:
 䠣	lzzccv	2802
 𧾌	lzzccv	0
 𨃿	lzzhcg	0
-来	m	160654780
 刺	ma	14831304
 標	ma	39854
 棩	maa	17802
@@ -63640,7 +63626,6 @@ columns:
 楖	mzzi	17704
 楖	mzziu	17704
 𣎹	mzzu	0
-大	n	425830658
 嫁	na	5996213
 妒	na	2633627
 婣	naa	19670
@@ -67259,7 +67244,6 @@ columns:
 𫰆	nzyv	0
 孔	nzz	16121872
 𡢀	nzzccv	0
-口	o	100375517
 	o	0
 ⼝	o	0
 ㅒ	o	0
@@ -71023,7 +71007,6 @@ columns:
 噀	ozzccv	38266
 唧	ozzi	2227666
 𠴁	ozzo	0
-我	p	154387904
 丿	p	73244
 	p	0
 	p	0
@@ -72257,7 +72240,6 @@ columns:
 𠃕	pzz	0
 卿	pzzi	1827446
 乮	pzzy	21094
-上	q	282192889
 	q	0
 丄	q	31220
 	q	0
@@ -75964,7 +75946,6 @@ columns:
 㦏	qzzcc	10226
 㦏	qzzccv	10226
 𥙸	qzzhks	0
-人	r	434270779
 	r	0
 ⺈	r	13116
 	r	0
@@ -80284,7 +80265,6 @@ columns:
 僎	rzzccv	37304
 㑡	rzzi	12866
 㑡	rzzin	12866
-次	s	73823175
 ㄧ	s	0
 亅	s	32642
 丨	s	171352
@@ -86069,7 +86049,6 @@ columns:
 𣵬	szzhkv	0
 𣹜	szziv	0
 巛	szzz	0
-地	t	183297426
 广	ta	47976644
 賣	ta	40486
 ⼴	ta	0
@@ -94864,7 +94843,6 @@ columns:
 㐋	tzyuv	13036
 𪪗	tzzia	0
 𡸎	tzzis	0
-和	u	82092971
 ㄩ	u	0
 凵	u	0
 ⼐	u	0
@@ -102805,7 +102783,6 @@ columns:
 蠞	uzzkcz	23222
 𨙌	uzzvrl	0
 𠃯	uzzyh	0
-二	v	120283633
 曾	va	16253623
 𡇤	vacob	0
 𧖔	vakkkc	0
@@ -103905,7 +103882,6 @@ columns:
 𥁄	vzume	0
 𥁄	vzume	0
 𠄥	vzvze	0
-不	w	741896220
 尚	wa	10728624
 尙	wa	40278
 	wa	0
@@ -107990,7 +107966,6 @@ columns:
 㷷	wzzccv	7984
 𤈓	wzztuu	0
 𤕋	wzzxzffba	0
-对	x	157207749
 乂	x	40922
 〤	x	0
 㐅	x	13048
@@ -109662,7 +109637,6 @@ columns:
 𤓱	xzyz	0
 𪠂	xzziy	0
 𠬜	xzzy	0
-也	y	67243123
 彡	y	0
 	y	0
 	y	0
@@ -115142,7 +115116,6 @@ columns:
 𥾆	yzzs	0
 𥾆	yzzs	0
 𥿲	yzztus	0
-已	z	50323337
 ㄟ	z	0
 乛	z	21110
 ㄣ	z	0

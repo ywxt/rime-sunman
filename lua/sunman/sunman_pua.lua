@@ -1,15 +1,13 @@
 -- encoding: utf-8
 
-local pua_basic = {
-    '','','','','','','','','','','','','','','','','','','','','','','',
-    '','','','','','','','','','','','','','','','','','','','','','','',
-    '','','','','','','','','','','','','','','','','','','','','','','',
-    '','','','','','','','','','',''
-}
+local function init(env)
+  local config = env.engine.schema.config
+  local code_rvdb = config:get_string('sunman_pua_filter/dictionary')
+  env.code_rvdb = ReverseDb('build/' .. code_rvdb .. '.reverse.bin')
+end
 
 local function exists(filter, text)
-    for i in utf8.codes(text) do
-        local c = utf8.codepoint(text, i)
+    for i,c in utf8.codes(text) do
         if filter(c) then
             return true
         end
@@ -18,8 +16,7 @@ local function exists(filter, text)
 end
 
 local function all(filter1, filter2, text)
-    for i in utf8.codes(text) do
-        local c = utf8.codepoint(text, i)
+    for i,c in utf8.codes(text) do
         if filter1(c) then
             if (not filter2(c)) then
                 return false
@@ -29,13 +26,10 @@ local function all(filter1, filter2, text)
     return true
 end
 
-local function is_pua_basic(char)
-    for _i, c in ipairs(pua_basic) do
-        if char == utf8.codepoint(c) then
-            return true
-        end
+local function is_pua_basic(env)
+    return function (char)
+        return utf8.len(env.code_rvdb:lookup(utf8.char(char)))>0
     end
-    return false
 end
 
 local function is_pua(char)
@@ -53,9 +47,10 @@ local function pua_filter(input, env)
     local b = env.engine.context:get_option("pua_filter")--开关状态
     if not b then
         for cand in input:iter() do
-            if exists(is_pua, cand.text) then
-                if all(is_pua, is_fisrst_pua, cand.text) then
-                    if all(is_fisrst_pua, is_pua_basic, cand.text) then
+            local cand_gen = cand:get_genuine()
+            if exists(is_pua, cand_gen.text) then
+                if all(is_pua, is_fisrst_pua, cand_gen.text) then
+                    if all(is_fisrst_pua, is_pua_basic(env), cand.text) then
                         yield(cand) -- 只有只包含基本PUA的才会显示
                     end
                 end
@@ -74,4 +69,4 @@ local function pua_filter(input, env)
 end
 
 
-return pua_filter
+return {init = init, func = pua_filter}

@@ -12,6 +12,7 @@ schema:
     https://github.com/ywxt/rime-sunman
   dependencies:
     - sunman_spelling_pseudo
+    - sunman.pua
     - luna_pinyin
     - stroke
     -
@@ -48,6 +49,9 @@ switches:
       - sunman_spelling.lv3
     states: [〇注解, 一重注解, 二重注解, 三重注解]
     reset: 3
+  - name: sunman_postpone_fullcode  # 仅作用于单字。
+    reset: 1
+    states: [ ＝原始排序, ↓全码后置 ]
   - name: pua_filter
     states: [PUA基本, PUA全集]
 
@@ -94,9 +98,9 @@ engine:
     - reverse_lookup_filter@stroke_reverse_lookup
     - lua_filter@sunman_spelling@smsp
     - lua_filter@sunman_spelling@smsp_for_rvlk
-    # - lua_filter@sunman_postpone_fullcode
+    - lua_filter@sunman_postpone_fullcode
     # - lua_filter@lazy_clock
-    - lua_filter@summan_pua_filter
+    - lua_filter@sunman_pua_filter
     - lua_filter@sunman_single_char
     - uniquifier
     # - lua_filter@debug_filter
@@ -143,10 +147,17 @@ smsp_for_rvlk:
   tags:
     __include: reverse_lookup/extra_tags
 
-# sunman_postpone_fullcode:
-#   tags: [ abc ]
-#   lua:
-#     # max_index: 6  # 最大后置位置，默认为 4
+    
+sunman_single_char:
+  tags: [ abc ]
+
+sunman_pua_filter:
+  dictionary: sunman.pua
+
+sunman_postpone_fullcode:
+  tags: [ abc ]
+  lua:
+    # max_index: 6  # 最大后置位置，默认为 4
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -231,7 +242,7 @@ stroke_reverse_lookup:
   tags: [stroke_lookup]
 
 punctuator:
-  import_preset: default
+  import_preset: sunman.symbols
 
 # 本节点仅用于被 __patch 指令引用
 key_bindings:
@@ -259,5 +270,6 @@ recognizer:
     reverse_lookup: "^`([a-z]+'?)*$"
     luna_pinyin_lookup: "^`P([a-z]+'?)*$"
     stroke_lookup: "^`B([a-z]+'?)*$"
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
     # os_env: '^env/\w+'
     # helper: '^help/$'

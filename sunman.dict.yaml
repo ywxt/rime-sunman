@@ -2,9 +2,9 @@
 ### This file must be encoded into UTF-8.
 ---
 name: sunman
-version: 2021.08.10
+version: 2020.08.10
 use_preset_vocabulary: false
-sort: weight
+sort: origan
 columns:
   - text
   - code

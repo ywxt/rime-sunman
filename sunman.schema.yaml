@@ -97,6 +97,7 @@ engine:
     # - lua_filter@sunman_postpone_fullcode
     # - lua_filter@lazy_clock
     - lua_filter@summan_pua_filter
+    - lua_filter@sunman_single_char
     - uniquifier
     # - lua_filter@debug_filter
 

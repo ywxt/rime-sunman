@@ -1,3 +1,4 @@
+
 local function single_char_first_filter(input, env)
    -- for cand in input:iter() do
    --    cand.comment = cand.comment..cand
@@ -11,7 +12,9 @@ local function single_char_first_filter(input, env)
    for cand in input:iter() do
       local cand_gen = cand:get_genuine()
       if string.find(cand_gen.type,'table') then
-         if (utf8.len(cand.text)==1) then
+         local input_cand = env.engine.context.input:sub(cand.start + 1, cand._end)
+         -- 单字和二简、三简在前
+         if (utf8.len(cand.text)==1) or (utf8.len(input_cand)<4) then
              table.insert(single, cand)
          else
             table.insert(multi, cand)

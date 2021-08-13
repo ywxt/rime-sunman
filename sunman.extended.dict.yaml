@@ -3,7 +3,7 @@
 ---
 name: "sunman.extended"
 version: "2021.08.10"
-sort: origan
+sort: by_original
 columns:
   - text
   - code
@@ -16,7 +16,7 @@ columns:
 
 
 # 长度在编码规则 encoder/rules 定义范围内的词组，可省略编码：
-# 重新部署时会按规则自动编码，能以 ewytiy 打出「自动编码词组」。
+# 重新部署时会按规则自动编码，能以 eiwfyatkizyd 打出「自动编码词组」。
 
 自动编码词组
 

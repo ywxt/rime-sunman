@@ -4,7 +4,7 @@
 name: sunman
 version: 2020.08.10
 use_preset_vocabulary: false
-sort: origan
+sort: by_original
 columns:
   - text
   - code
@@ -20,29 +20,29 @@ encoder:
     - length_equal: 3
       formula: "AaAbBaBbCaCb"
     - length_equal: 4
-      formula: "AaBaCaDa"
+      formula: "AaAbBaBbCaCbDaDb"
     - length_equal: 5
-      formula: "AaBaCaDaEa"
+      formula: "AaAbBaBbCaCbDaDbEaEb"
     - length_equal: 6
-      formula: "AaBaCaDaEaFa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFb"
     - length_equal: 7
-      formula: "AaBaCaDaEaFaGa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGb"
     - length_equal: 8
-      formula: "AaBaCaDaEaFaGaHa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHb"
     - length_equal: 9
-      formula: "AaBaCaDaEaFaGaHaIa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIb"
     - length_equal: 10
-      formula: "AaBaCaDaEaFaGaHaIaJa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIbJaJb"
     - length_equal: 11
-      formula: "AaBaCaDaEaFaGaHaIaJaKa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIbJaJbKaKb"
     - length_equal: 12
-      formula: "AaBaCaDaEaFaGaHaIaJaKaLa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIbJaJbKaKbLaLb"
     - length_equal: 13
-      formula: "AaBaCaDaEaFaGaHaIaJaKaLaMa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIbJaJbKaKbLaLbMaMb"
     - length_equal: 14
-      formula: "AaBaCaDaEaFaGaHaIaJaKaLaMaNa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIbJaJbKaKbLaLbMaMbNaNb"
     - length_equal: 15
-      formula: "AaBaCaDaEaFaGaHaIaJaKaLaMaNaOa"
+      formula: "AaAbBaBbCaCbDaDbEaEbFaFbGaGbHaHbIaIbJaJbKaKbLaLbMaMbNaNbOaOb"
 import_tables:
   - sunman.brevity
   - sunman.words

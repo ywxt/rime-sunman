@@ -15,7 +15,6 @@ schema:
     - sunman.pua
     - luna_pinyin
     - stroke
-    -
 __patch:
   - sunman.custom:/patch?
   - symbols:/patch?

@@ -12,7 +12,6 @@ schema:
     https://github.com/ywxt/rime-sunman
   dependencies:
     - sunman_spelling_pseudo
-    - sunman.pua
     - luna_pinyin
     - stroke
 __patch:
@@ -52,7 +51,7 @@ switches:
     reset: 1
     states: [ ＝原始排序, ↓全码后置 ]
   - name: pua_filter
-    states: [PUA基本, PUA全集]
+    states: [PUA基本, PUA扩展]
 
 engine:
   processors:
@@ -154,7 +153,7 @@ sunman_single_char:
   tags: [ abc ]
 
 sunman_pua_filter:
-  dictionary: sunman.pua
+  __include: sunman_charset_filter
 
 sunman_postpone_fullcode:
   tags: [ abc ]

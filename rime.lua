@@ -9,3 +9,5 @@ sunman_pua_filter = require("sunman/sunman_pua")
 sunman_single_char = require("sunman/sunman_single_char")
 
 sunman_postpone_fullcode = require("sunman/sunman_postpone_fullcode")
+
+sunman_charset_filter = require("sunman/sunman_charset")

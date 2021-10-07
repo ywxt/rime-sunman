@@ -20,13 +20,13 @@ __patch:
   - symbols:/patch?
 
 switches:
-  - options: [utf8, gbk, gb2312, big5]
-    reset: 1
+  - options: [standard, big5, gbk, utf8]
+    reset: 0
     states:
-      - UTF-8
-      - GBK
-      - GB2312
+      - 规范
       - BIG5
+      - GBK
+      - UTF8
   - name: ascii_mode
     reset: 0
     states: [中文, 西文]
@@ -87,10 +87,11 @@ engine:
     # - lua_translator@helper
   filters:
     # - lua_filter@single_char_only
-    - charset_filter@gb2312
-    - charset_filter@gbk
-    - charset_filter@big5
+    # - charset_filter@gb2312
+    # - charset_filter@gbk
+    # - charset_filter@big5
     # - charset_filter@utf8  # 该组件在 librime 1.6.* 以后错误过滤字符，暂时停用
+    - lua_filter@sunman_charset_filter
     - simplifier@simplify
     - simplifier@traditionalize
     - reverse_lookup_filter@luna_pinyin_reverse_lookup
@@ -108,20 +109,22 @@ engine:
 #   __include: gb2312
 
 # 防止对 punct 进行过滤
-gb2312:
+# gb2312:
+#   tags: [abc, reverse_lookup, luna_pinyin_lookup, stroke_lookup]
+# gbk:
+#   __include: gb2312
+# big5:
+#   __include: gb2312
+sunman_charset_filter:
   tags: [abc, reverse_lookup, luna_pinyin_lookup, stroke_lookup]
-gbk:
-  __include: gb2312
-big5:
-  __include: gb2312
 
 simplify:
-  __include: gb2312
+  __include: sunman_charset_filter
   option_name: simplification
   tips: all
 
 traditionalize:
-  __include: gb2312
+  __include: sunman_charset_filter
   opencc_config: s2t.json
   option_name: traditionalization
   tips: all
